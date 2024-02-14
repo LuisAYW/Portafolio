@@ -115,3 +115,16 @@ p{
     text-decoration: solid;
     height: auto;
 }
+@media (max-with:800px){
+    h1{
+        color: #8bd450;
+    font-size: 22px;
+    text-align: center;
+    background: #965fd4;
+    height: 50px;
+    text-decoration-style: solid;
+    font-family: monospace;
+    text-shadow: 5px 0 black; 
+        }
+}
+    
