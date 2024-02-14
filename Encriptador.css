@@ -115,7 +115,7 @@ p{
     text-decoration: solid;
     height: auto;
 }
-@media (max-with:800px){
+@media (max-width:800px){
     h1{
         color: #8bd450;
     font-size: 22px;
