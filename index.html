@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Encriptador.css">
+
+</head>
+<body>
+    <header><h1>Encriptador/Desencriptador</h1></header>
+
+      <div class="inputSeccion">
+        <h2 for="textoInput" >Ingresa el texto:</h2>
+         <textarea id="textoInput" rows="25" cols="10" placeholder="Ejemplo de texto a encriptar"></textarea>
+         <label class="texto1" >Selecciona la operación:</label>
+        
+         <button onclick="encriptarTexto()">Encriptar Texto</button>
+         <button onclick="desencriptarTexto()">Desencriptar Texto</button>
+      </div>
+
+       <div class="Outputseccion"> 
+         <h3>Resultado de la operacion</h3>
+          <textarea id="resultadoOutput" rows="25" cols="10" readonly></textarea>
+         <label class="Texto2">Este es su texto </label>
+         <button onclick="copiarResultado()">Copiar Resultado</button>
+      </div>
+  
+
+    <script src="script.js"></script>
+
+</body>
+<footer>
+  <div class="footerimage">
+    <img src="Images/Eva01.png">
+  </div>
+  <p>Luis Alberto cel:5585378522</p>
+</footer>
+</html>
