@@ -39,6 +39,14 @@ function copiarResultado() {
 }
 
 
-function Iraotrapaginaweb(){
-    window.location.href= "Encriptador.html";
+function validarTexto() {
+    const textoInput = document.getElementById('textoInput').value;
+    const caracteresEspeciales = /[!@#$%^&*(),.?":{}|<>]/;
+
+    if (caracteresEspeciales.test(textoInput)) {
+        alert('El texto no puede contener caracteres especiales.');
+        return;
+    }
+
+    encriptarTexto();
 }
