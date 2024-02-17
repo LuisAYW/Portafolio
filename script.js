@@ -67,5 +67,8 @@ function validarTexto() {
         alert('El texto solo puede contener letras minúsculas y espacios en blanco.');
         document.getElementById('textoInput').value = ''; 
         return;
+    }
+
+    encriptarTexto();
 }
 
