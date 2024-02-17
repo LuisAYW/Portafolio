@@ -61,12 +61,11 @@ function copiarResultado() {
 
 function validarTexto() {
     const textoInput = document.getElementById('textoInput').value;
-    const caracteresEspeciales = /[!@#$%^&*(),.?":{}|<>]/;
+    const caracteresEspeciales = /[^a-z\s]/;
 
     if (caracteresEspeciales.test(textoInput)) {
-        alert('El texto no puede contener caracteres especiales.');
+        alert('El texto solo puede contener letras minúsculas y espacios en blanco.');
+        document.getElementById('textoInput').value = ''; 
         return;
-    }
-
-    encriptarTexto();
 }
+
