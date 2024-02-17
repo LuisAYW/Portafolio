@@ -22,13 +22,33 @@ function encriptarTextoLogica(texto) {
 }
 
 function desencriptarTextoLogica(texto) {
-    return texto
-        .replace(/enter/g, 'e')
-        .replace(/imes/g, 'i')
-        .replace(/ai/g, 'a')
-        .replace(/ober/g, 'o')
-        .replace(/ufat/g, 'u');
+    const patrones = {
+        'enter': 'e',
+        'imes': 'i',
+        'ai': 'a',
+        'ober': 'o',
+        'ufat': 'u'
+    };
+
+    let resultado = '';
+    let i = 0;
+    while (i < texto.length) {
+        let encontrado = false;
+        for (let patron in patrones) {
+            if (texto.startsWith(patron, i)) {
+                resultado += patrones[patron];
+                i += patron.length;
+                encontrado = true;
+                break;
+            }
+        }
+        if (!encontrado) {
+            resultado += texto[i++];
+        }
+    }
+    return resultado;
 }
+
 
 
 function copiarResultado() {
